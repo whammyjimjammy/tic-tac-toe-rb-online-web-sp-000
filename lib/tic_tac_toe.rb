@@ -36,10 +36,10 @@ def valid_move?(board, index)
 end
 
 def turn(board)
-  puts "Please enter 1 - 9:"
+  puts "Please enter 1-9:"
   user_input = gets.chomp
   index = input_to_index(user_input)
-  if valid_move?(board,index)
+  if valid_move?(board, index)
     player_token = current_player(board)
     move(board, index, user_input(board))
     display_board(board)
